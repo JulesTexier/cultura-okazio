@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f985b1fef70cbd1c30bb565c15f9d95",
+    "content-hash": "7e190ada5ecf03246538014fb7d40f9b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "composer-plugin-api": "^1.1.0 || ^2",
                 "php": "^7 || ^8"
             },
             "replace": {
@@ -3778,7 +3778,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.1",
+                "composer-plugin-api": "^2",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -3945,7 +3945,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": ">=2.1",
+                "composer-runtime-api": ">=2",
                 "ext-xml": "*",
                 "php": ">=8.0.14",
                 "symfony/cache": "^5.4|^6.0",
@@ -5935,7 +5935,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0|^2.0",
+                "composer-plugin-api": "^1.0|^2",
                 "php": ">=8.0.14"
             },
             "conflict": {
@@ -6011,7 +6011,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": ">=2.1",
+                "composer-runtime-api": ">=2",
                 "ext-xml": "*",
                 "php": ">=8.0.14",
                 "symfony/config": "^5.4|^6.0",
@@ -6979,7 +6979,7 @@
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": ">=2.1",
+                "composer-runtime-api": ">=2",
                 "php": ">=8.0.14",
                 "symfony/config": "^5.4|^6.0",
                 "symfony/http-foundation": "^5.4|^6.0",
@@ -9964,7 +9964,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0.14",
+        "php": ">=8.0.2",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
