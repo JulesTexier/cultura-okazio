@@ -8,7 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-mbstring": "*",
-        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-mbstring": "v1.23.1",
         "composer/package-versions-deprecated": "1.11.99.4",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.5",
@@ -85,7 +85,8 @@
         "symfony/polyfill-php72": "*",
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
-        "symfony/polyfill-php80": "*"    },
+        "symfony/polyfill-php80": "*",
+        "symfony/polyfill-mbstring": "*"    },
 
 
     "scripts": {
