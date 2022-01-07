@@ -13,9 +13,20 @@
     <div>
     This friendly message is coming from:
     </div>
-    <div class="form">
-    {{ form(form) }}
+    <div>
+        {{ form_start(form) }}
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    {{ form_label(form.Email) }}
+                </div>
+                <div class="col-auto">
+                    {{ form_widget(form.Email) }}
+                </div>
+                <div class="col-auto">
+                    {{ form_widget(form.Enregistrer) }}
+                </div>
+            </div>
+        {{ form_end(form) }}
     </div>
-
 </div>
 {% endblock %}

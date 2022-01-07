@@ -15,7 +15,7 @@ class UserType extends AbstractType
     {
         $builder
             ->add('Email')
-            ->add('save', SubmitType::class) // Champ à ajouter manuellement pour avoir un bouton de soumission
+            ->add('Enregistrer', SubmitType::class) // Champ à ajouter manuellement pour avoir un bouton de soumission
         ;
     }
 
