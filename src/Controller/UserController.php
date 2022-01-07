@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request; // Importation de la classe Reques
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
 use App\Repository\UserRepository;
+use Doctrine\Persistence\ManagerRegistry;
 use App\Form\UserType;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -17,7 +18,7 @@ class UserController extends AbstractController
 {
     #[Route('/', name: 'home')]
 
-    public function index(Request $request):Response
+    public function addUser(Request $request, ManagerRegistry $doctrine)
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
@@ -25,14 +26,23 @@ class UserController extends AbstractController
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) { 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($user);
-            $em->flush();
-            echo '<script>alert("Adresse enregistrée. Merci et à bientôt ")</script>';
-            return $this->redirectToRoute('home');            
+            // $em = $this->getDoctrine()->getManager();
+            // $em->persist($user);
+            // $em->flush();
+            return $this->redirectToRoute('thanks');            
         }
-        return $this->render('user/index.html.twig', [
+        return $this->render('user/adduser.html.twig', [
             'form' => $form->createView()
+        ]);
+        }
+
+
+
+    #[Route('/thanks', name: 'thanks')]
+
+    public function index()
+    {
+        return $this->render('user/thanks.html.twig', [
         ]);
         }
 
