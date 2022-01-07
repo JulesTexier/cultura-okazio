@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request; // Importation de la classe Request
 use Symfony\Component\Routing\Annotation\Route;
@@ -10,15 +9,14 @@ use App\Entity\User;
 use App\Repository\UserRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use App\Form\UserType;
-use Symfony\Component\Validator\Constraints as Assert;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 class UserController extends AbstractController
 {
     #[Route('/', name: 'home')]
 
-    public function addUser(Request $request, ManagerRegistry $doctrine)
+    public function addUser(Request $request)
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
