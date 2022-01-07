@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request; // Importation de la classe Request
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\User;
 use App\Repository\UserRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -16,7 +17,7 @@ class UserController extends AbstractController
 {
     #[Route('/', name: 'home')]
 
-    public function addUser(Request $request)
+    public function addUser(Request $request, ManagerRegistry $doctrine)
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
@@ -24,7 +25,7 @@ class UserController extends AbstractController
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) { 
-            $em = $this->getDoctrine()->getManager();
+            $em = $doctrine->getManager();
             $em->persist($user);
             $em->flush();
             return $this->redirectToRoute('thanks');            
