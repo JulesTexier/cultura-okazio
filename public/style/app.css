@@ -1,10 +1,99 @@
-body {
-  background-color: black;
-  border: 1px;;
+
+/* COLORS */
+
+:root {
+  --blue:#022476;
 }
+
+
+
+
+/* FONT */
+@font-face {
+  font-family: "carena";
+  src: url("../font/carena/Carena-Regular.otf")
+}
+
+
+body {
+  padding: 2em;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #F8F2EB;
+  }
+
+.logo{
+  display:flex;
+  justify-content: start;
+  margin:1em;
+  margin-bottom: 4em;
+  width: 100vw;
+  padding: 2em;
+}
+
+.example-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 
 h1{
-  font-size: 40px;
+  font-family: "carena";
+  font-size: 50px;
+  text-align: center;
+  color:var(--blue)
 }
 
+h3{
+  font-family: "Poppins";
+  font-size: 20px;
+  text-align: center;
+  color:var(--blue)
+}
 
+span {
+display: block;
+font-family: "Poppins";
+font-weight: 300;
+text-align: center;
+display: flex;
+justify-content: center;
+color:var(--blue)
+}
+
+.form{
+  margin-top: 20px;
+}
+
+.video {
+  margin:3em;
+}
+
+.btn-primary {
+  background-color: var(--blue);
+  border: var(--blue);
+  border-radius: 30px;
+}
+
+/*Big smartphones [426px -> 600px]*/
+
+@media only screen and (max-width: 600px){
+
+.logo{
+  display:flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+/* .example-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+} */
+
+
+}
