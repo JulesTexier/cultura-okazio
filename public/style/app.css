@@ -16,19 +16,18 @@
 
 
 body {
-  padding: 2em;
   display: grid;
   place-items: center;
   min-height: 100vh;
   background-color: #F8F2EB;
   }
 
-.logo{
+.header{
   display:flex;
-  justify-content: start;
+  justify-content: space-between;
   margin-bottom: 4em;
   padding: 2em;
-  width:100vmax;
+  width:1000px;
 }
 
 .example-wrapper{
@@ -95,6 +94,11 @@ color:var(--blue)
   align-content: center;
 }
 
+.logo{
+  height:40px;
+  width: auto;
+}
+
 .png{
   display: flex;
   justify-content: center;
@@ -121,6 +125,7 @@ img{
   position: relative;
   }
 
+ 
 
 /*Big smartphones [1200px]*/
 
@@ -160,7 +165,7 @@ img{
     padding: 0em;
   }
 
-.logo{
+.header{
   display:flex;
   width: 50vh;
   justify-content: center;
