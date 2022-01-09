@@ -19,11 +19,11 @@
     </div>
     <div class="form">
         {{ form_start(form) }}
-            <div class="row g-10 align-items-center">
-                <div class="col-auto">
+            <div class="form">
+                <div class="col-auto m-1">
                     {{ form_widget(form.Email) }}
                 </div>
-                <div class="col-auto">
+                <div class="col-auto m-1">
                     {{ form_widget(form.Enregistrer) }}
                 </div>
             </div>
@@ -35,10 +35,22 @@
         <h3>Découvre l'univers Okazio en vidéo</h3>
     <div class="bullet">
         <div class="icon">
+            <div class="png">
+                <img src="{{ asset('img/logo-cultura-jubile.png')}}" alt="" height="50px">
+            </div>
+            <div class="text">Communauté Cultura</div>
         </div>
         <div class="icon">
+            <div class="png">
+                <img src="{{ asset('img/002-gift-card.png')}}" alt="">
+            </div>
+            <div class="text">+20% en Cartes cadeaux</div>
         </div>
         <div class="icon">
+            <div class="png">
+                <img src="{{ asset('img/001-secure-shield.png')}}" alt="">
+            </div>
+            <div class="text">Plateforme sécurisée</div>
         </div>
     </div>
 </div>
