@@ -26,7 +26,6 @@ body {
 .logo{
   display:flex;
   justify-content: start;
-  margin:1em;
   margin-bottom: 4em;
   padding: 2em;
   width:100vmax;
