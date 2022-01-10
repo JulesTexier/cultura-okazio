@@ -80,6 +80,11 @@ color:var(--blue)
   border-radius: 30px;
 }
 
+button {
+  font-family: "Poppins"!important;
+
+}
+
 .bullet{
   display: flex;
   flex-wrap: wrap;
