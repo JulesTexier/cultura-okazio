@@ -12,6 +12,11 @@ Scop Technique : PHP, Symfony, Heroku
 - Deploiement sur Heroku
 
 ## Comment lancer l'app?
+
+https://cultura-okazio.herokuapp.com/
+
+Voir le code :
+
 - 1/ Téléchargez le Repo.
 - 2/ Lancez "symfony serve -d".
 - 4/ cliquez sur https://127.0.0.1:8000/
